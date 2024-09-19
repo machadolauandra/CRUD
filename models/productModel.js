@@ -12,7 +12,7 @@ const Product = {
         });
     },
  
-    // Encontra um produto por ID
+    // Encontra um produto por ID 
     findById: (id, callback) => {
         const query = 'SELECT * FROM products WHERE id = ?';
         db.query(query, [id], (err, results) => {

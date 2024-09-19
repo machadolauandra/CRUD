@@ -8,7 +8,7 @@ const productController = {
 
     // Cria um novo produto
     createProduct: (req, res) => {
-        const newProduct = {
+        const newProduct = { 
             name: req.body.name,
             price: parseFloat(req.body.price),
             category: req.body.category,
