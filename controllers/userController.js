@@ -3,7 +3,7 @@ const User = require('../models/userModel');
 const userController = {
     createUser: (req, res) => {
         const newUser = {
-            username: req.body.username, 
+            username: req.body.username,
             password: req.body.password,
             role: req.body.role,
         };
@@ -81,6 +81,17 @@ const userController = {
                 return res.status(500).json({ error: err });
             }
             res.redirect('/users');
+        });
+    },
+
+    searchUsers: (req, res) => {
+        const search = req.query.search || '';
+
+        User.searchByName(search, (err, users) => {
+            if (err) {
+                return res.status(500).json({ error: err });
+            }
+            res.json({ users });
         });
     },
 };
