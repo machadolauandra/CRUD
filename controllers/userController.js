@@ -3,7 +3,7 @@ const User = require('../models/userModel');
 const userController = {
     createUser: (req, res) => {
         const newUser = {
-            username: req.body.username,
+            username: req.body.username, 
             password: req.body.password,
             role: req.body.role,
         };

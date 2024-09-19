@@ -4,7 +4,7 @@ const User = {
     create: (user, callback) => {
         const query = 'INSERT INTO users (username, password, role) VALUES (?, ?, ?)';
         db.query(query, [user.username , user.password, user.role], (err, results) => {
-            if (err) {
+            if (err) { 
                 return callback(err);
             }
             callback(null, results.insertId);

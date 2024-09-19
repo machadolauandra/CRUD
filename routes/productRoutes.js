@@ -7,7 +7,7 @@ router.get('/', productController.getAllProducts);
 
 // Rota para renderizar o formulário de criação de um novo produto
 router.get('/new', productController.renderCreateForm);
-
+ 
 // Rota para criar um novo produto
 router.post('/', productController.createProduct);
 
