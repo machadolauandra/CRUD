@@ -23,3 +23,4 @@ app.use('/products', productRouter);
 app.listen(PORT, () => { 
     console.log(`Server is running on port ${PORT}`);
 });
+ 

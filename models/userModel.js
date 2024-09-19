@@ -18,7 +18,7 @@ const User = {
                 return callback(err);
             }
             callback(null, results[0]);
-        });
+        }); 
     },
 
     findByUsername: (username, callback) => {

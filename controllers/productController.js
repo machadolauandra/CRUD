@@ -22,7 +22,7 @@ const productController = {
         });
     },
 
-    // Obtém um produto por ID
+    // Obtém um produto por ID 
     getProductById: (req, res) => {
         const productId = req.params.id;
 
