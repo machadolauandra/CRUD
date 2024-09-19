@@ -10,7 +10,7 @@ router.get('/new', productController.renderCreateForm);
  
 // Rota para criar um novo produto
 router.post('/', productController.createProduct);
-
+ 
 // Rota para obter um produto específico por ID
 router.get('/:id', productController.getProductById);
 

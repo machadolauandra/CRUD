@@ -11,7 +11,7 @@ const Product = {
             callback(null, results.insertId);
         });
     },
-
+ 
     // Encontra um produto por ID
     findById: (id, callback) => {
         const query = 'SELECT * FROM products WHERE id = ?';
