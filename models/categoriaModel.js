@@ -9,7 +9,7 @@ const Categoria = {
             }
             callback(null, results.insertId);
         });
-    },
+    }, 
 
     findById: (id, callback) => {
         const query = 'SELECT * FROM categorias WHERE id = ?';
