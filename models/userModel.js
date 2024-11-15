@@ -7,12 +7,12 @@ const User = {
             if (err) {
                 return callback(err);
             }
-            callback(null, results.insertId);
+            callback(null, results.insertId); 
         });
     },
 
     findById: (id, callback) => {
-        const query = 'SELECT * FROM users WHERE id = ?';
+        const query = 'SELECT * FROM users WHERE id = ?'; 
         db.query(query, [id], (err, results) => {
             if (err) {
                 return callback(err);

@@ -4,9 +4,9 @@ const userController = {
     createUser: (req, res) => {
         const newUser = {
             username: req.body.username,
-            password: req.body.password,
+            password: req.body.password, 
             role: req.body.role,
-        };
+        }; 
 
         User.create(newUser, (err, userId) => {
             if (err) {
@@ -26,7 +26,7 @@ const userController = {
             if (!user) {
                 return res.status(404).json({ message: 'User not found' });
             }
-            res.render('users/show', { user });
+            res.render('users/show', { user }); 
         });
     },
 

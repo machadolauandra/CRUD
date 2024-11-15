@@ -22,7 +22,7 @@ app.use(methodOverride('_method'));
 app.use('/', indexRoutes);
 app.use('/users', userRoutes);
 app.use('/produtos', produtoRoutes);
-app.use('/categorias', categoriaRoutes);
+app.use('/categorias', categoriaRoutes);    
 app.use('/vendas', vendasRoutes);
 
 app.listen(PORT, () => {
